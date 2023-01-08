@@ -1,0 +1,10 @@
+# /etc/systemd/system/test.sh.service
+[Unit]
+Description=My Test Service
+
+[Service]
+Type=simple
+ExecStart=/bin/bash /home/bsm/test/test.sh
+
+[Install]
+WantedBy=multi-user.target
